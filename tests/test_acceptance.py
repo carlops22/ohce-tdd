@@ -1,3 +1,4 @@
+
 def test_ohce_acceptance():
     input_stream = ["Pedro", "hola", "oto", "stop"]
     output_stream = []
