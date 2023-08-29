@@ -7,8 +7,9 @@ class Ohce:
     def __init__(self,name):
         self.name = name
     
-    def get_greeting(self):
-        current_hour= get_current_hour()
+    def get_greeting(self, current_hour=None):
+        if current_hour is None:
+            current_hour= self.get_current_hour()
         if 20 <= current_hour <6:
             return "¡Buenas noches"
         elif 6 <= current_hour <12:
