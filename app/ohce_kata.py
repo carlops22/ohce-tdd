@@ -24,13 +24,13 @@ class Ohce:
     def return_greeting(self, current_hour= None):
         greeting = self.get_greeting(current_hour)
         return f"{greeting} {self.name}!"
-    def ohce(self, input, output_f):
-        output_f(self.return_greeting()) 
+    def ohce(self, input):
+        print(self.return_greeting()) 
         while True:
             user_input = input("> ")
             if user_input == "Stop!":
-                output_f(f"Adios {self.name}")
-                break
+                print(f"Adios {self.name}")
+                raise SystemExit
 
 
 
