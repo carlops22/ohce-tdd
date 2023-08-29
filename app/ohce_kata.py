@@ -31,6 +31,9 @@ class Ohce:
             if user_input == "Stop!":
                 print(f"Adios {self.name}")
                 raise SystemExit
+            reversed_input = user_input[::-1]
+            print(reversed_input)
+
 
 
 
