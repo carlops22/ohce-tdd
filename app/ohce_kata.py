@@ -12,12 +12,12 @@ class Ohce:
     def get_greeting(self, current_hour=None):
         if current_hour is None:
             current_hour= self.get_current_hour()
-        if 20 <= current_hour <6:
-            return "¡Buenas noches"
-        elif 6 <= current_hour <12:
+        if 6 <= current_hour < 12:
             return "¡Buenos días"
-        else:
+        elif 12 <= current_hour < 20:
             return "¡Buenas tardes"
+        else:
+            return "¡Buenas noches"
 
     def return_greeting(self, current_hour= None):
         greeting = self.get_greeting(current_hour)
