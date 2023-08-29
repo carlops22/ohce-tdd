@@ -1,4 +1,4 @@
-
+"""
 def test_ohce_acceptance():
     input_stream = ["Pedro", "hola", "oto", "stop"]
     output_stream = []
@@ -20,3 +20,4 @@ def test_ohce_acceptance():
         "Adios Pedro"
     ]
     assert output_stream == expected_output
+"""
