@@ -17,7 +17,7 @@ class Ohce:
         else:
             return "¡Buenas tardes"
 
-    def return_greeting(self):
-        greeting = self.get_greeting()
+    def return_greeting(self, current_hour= None):
+        greeting = self.get_greeting(current_hour)
         return f"{greeting} {self.name}!"
     
