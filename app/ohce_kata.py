@@ -24,4 +24,8 @@ class Ohce:
     def return_greeting(self, current_hour= None):
         greeting = self.get_greeting(current_hour)
         return f"{greeting} {self.name}!"
+    def ohce(self, input_f, output_f):
+        output_f(self.return_greeting()) #
+
+        
     
