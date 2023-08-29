@@ -1,14 +1,12 @@
+import pytest
 from app.ohce_kata import Ohce
+@pytest.mark.parametrize("current_hour, expectec_greeting", [
+    (7, "¡Buenos días"),
+    (15, "¡Buenas tardes"),
+    (22, "¡Buenas noches")
+    ])
 
-def test_greeting():
-    def test_greeting_morning():
-        greeting = Ohce.get_greeting(7)
-        assert greeting == "¡Buenos días"
-    def test_greeting_afternoon():
-        greeting = Ohce.get_greeting(15)
-        assert greeting == "¡Buenas tardes"
-    def test_greeting_evening():
-        greeting = Ohce.get_greeting(22)
-        assert greeting == "¡Buenas noches"
-
-    
+def test_get_greeting(current_hour, expected_greeting):
+    ohce_instance = Ohce("Pedro")
+    greeting = ohce_instance.get_greeting(current_hour)
+    assert greeting == expected_greeting
