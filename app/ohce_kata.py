@@ -1,12 +1,14 @@
 import datetime
-def get_current_hour():
-    now = datetime.datetime.now()
-    current_hour = now.hour
-    return current_hour
+
 class Ohce:
     def __init__(self,name):
         self.name = name
-    
+
+    def get_current_hour():
+        now = datetime.datetime.now()
+        current_hour = now.hour
+        return current_hour
+
     def get_greeting(self, current_hour=None):
         if current_hour is None:
             current_hour= self.get_current_hour()
