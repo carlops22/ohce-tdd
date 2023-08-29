@@ -2,9 +2,9 @@
 import pytest
 from app.ohce_kata import Ohce
 
-def test_reverse_echo(capfd):
+def test_palindrome(capfd):
     ohce_instance= Ohce("Pedro")
-    input_sequence=["alo","Stop!"]
+    input_sequence=["oto","Stop!"]
     expected_output = "¡Bonita palabra!"
     def input_func(prompt):
         return input_sequence.pop(0)
