@@ -33,6 +33,9 @@ class Ohce:
                 raise SystemExit
             reversed_input = user_input[::-1]
             print(reversed_input)
+            if user_input == reversed_input:
+                print("¡Bonita palabra!")
+                
 
 
 
