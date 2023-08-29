@@ -1,6 +1,6 @@
 import pytest
 from app.ohce_kata import Ohce
-@pytest.mark.parametrize("current_hour, expectec_greeting", [
+@pytest.mark.parametrize("current_hour, expected_greeting", [
     (7, "¡Buenos días"),
     (15, "¡Buenas tardes"),
     (22, "¡Buenas noches")
